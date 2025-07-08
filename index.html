@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SIP Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>SIP Calculator</h1>
+
+    <div class="form-group">
+      <label for="monthly">Monthly Investment (₹)</label>
+      <input type="number" id="monthly" placeholder="e.g. 5000" />
+    </div>
+
+    <div class="form-group">
+      <label for="duration">Investment Duration (Years)</label>
+      <input type="number" id="duration" placeholder="e.g. 10" />
+    </div>
+
+    <div class="form-group">
+      <label for="return">Expected Return Rate (%)</label>
+      <input type="number" id="return" placeholder="e.g. 12" />
+    </div>
+
+    <div class="form-group">
+      <label for="risk">Risk Category</label>
+      <select id="risk">
+        <option value="">Select</option>
+        <option value="Conservative">Conservative</option>
+        <option value="Moderate">Moderate</option>
+        <option value="Aggressive">Aggressive</option>
+      </select>
+    </div>
+
+    <button onclick="calculateSIP()">Calculate</button>
+
+    <div class="output">
+      <p><strong>Total Invested:</strong> ₹<span id="invested">0</span></p>
+      <p><strong>Estimated Returns:</strong> ₹<span id="returns">0</span></p>
+      <p><strong>Final Maturity Value:</strong> ₹<span id="maturity">0</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
