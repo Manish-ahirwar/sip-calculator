@@ -7,7 +7,7 @@ The goal was to create a clean and functional user interface for a financial adv
 
 ## 🚀 Live Demo
 
-👉 [Click here to view the live project](#)  
+👉 [Click here to view the live project](https://manish-ahirwar.github.io/sip-calculator)  
 
 
 ---
